@@ -1,7 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import pickle
 
@@ -35,4 +34,5 @@ pickle_filename = "weather_predict_model.pkl"
 with open(pickle_filename, 'wb') as file:
     pickle.dump(lr, file)
 print(f"✅ Model saved to {pickle_filename}")
+
 
